@@ -1,0 +1,34 @@
+.our-services{
+    text-align: center;
+    margin-top: 150px;
+ 
+    h1{
+        font-size: 60px;
+        line-height: 70px;
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .our-services{
+
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .our-services{
+        margin-top: 140px; // CRITICAL: Reduce from 150px
+        
+        h1{
+            font-size: 36px;
+            line-height: 150%;
+            width: 100%;
+            font-weight: bold;
+        }
+    }
+}

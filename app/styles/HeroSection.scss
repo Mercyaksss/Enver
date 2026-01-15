@@ -1,0 +1,62 @@
+.hero{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 23px;
+     
+    &-p{
+      margin: 24px 0 50px 0;
+    }
+
+    &-left{
+        width: 50%;
+    }
+   
+}
+
+@media (max-width: 1024px) {
+  .hero{
+    
+    &-left{
+      width: 80%;
+      // background-color: red;
+
+      h1{
+      font-size: 60px;
+      }
+
+      button{
+
+        img{
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    img{
+      // width: 50;
+      height: 600px;
+      // background-color: black;
+    }
+  }
+
+}
+
+@media (max-width: 550px) {
+  .hero{
+    display: grid;
+    margin-top: 66px;
+
+    &-left{
+      width: 100%;
+    }
+
+    img{
+      height: 400px;
+      // margin-top: 50px;
+    }
+
+    
+  }
+}

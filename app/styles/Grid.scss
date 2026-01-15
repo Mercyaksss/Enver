@@ -1,0 +1,47 @@
+.service-grid{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 50px;
+
+    .service-card{
+        width: 384px;
+        height: 300px;
+        background-color: transparent;
+        padding: 20px 40px;
+
+        h2,
+        p{
+            margin-bottom: 20px;
+        }
+
+        img{
+            margin: auto auto 20px auto;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .service-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .service-grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 32px; // Add this
+
+        .service-card{
+            width: 100%;
+            height: auto; // CRITICAL: Change from fixed height
+            padding: 32px 20px; // Adjust padding for mobile
+        }
+    }
+}

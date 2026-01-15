@@ -1,0 +1,56 @@
+.why-enver{
+    .text{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+
+        h1{
+            width: 45%;
+            font-size: 60px;
+        }
+
+        p{
+            width: 50%;
+        }
+    }
+
+    img{
+        margin-top: 50px;
+    }
+
+}
+
+// @media (max-width: 1020px) {
+//     .text{
+    
+//         h1{
+//             // background-color: purple;
+//         }
+//     }
+
+
+// }
+
+@media (max-width: 550px) {
+    .why-enver{
+
+        .text{
+            display: grid;
+
+            h1{
+                font-size: 36px;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            p{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+        img{
+            height: 184px;
+        }
+    }
+
+}
