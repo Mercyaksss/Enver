@@ -10,6 +10,7 @@
 
   &-left{
       width: 50%;
+      margin-top: 70px;
   }
 }
 
@@ -41,7 +42,6 @@
 @media (max-width: 830px) {
     .hero{
     display: grid;
-    margin-top: 66px;
 
     &-left{
       width: 100%;
@@ -49,6 +49,7 @@
 
     h1{
       font-size: 80px;
+      line-height: 80px;
     }
 
     p{
@@ -68,10 +69,14 @@
 @media (max-width: 550px) {
   .hero{
     display: grid;
-    margin-top: 66px;
 
     &-left{
       width: 100%;
+    }
+
+    h1{
+      font-size: 60px;
+      line-height: 100%;
     }
 
     img{

@@ -6,7 +6,7 @@ import arrow from '../assets/arrow.png'
 
 function HeroSection() {
     return(
-        <section className='hero container'>
+        <section className='hero container' id='home'>
             <div className='hero-left'>
                 <h1>Build Your Awesome Platform</h1>
                 <p className='hero-p'>Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>

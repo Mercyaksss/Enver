@@ -7,7 +7,7 @@ import '../styles/Portfolio.scss';
 
 function Portfolio() {
   return (
-   <section className='portfolio container'> 
+   <section className='portfolio container' id='portfolio'> 
    <h1>Our Awesome Portfolio</h1>
 
    <div className='portfolio-flex'>

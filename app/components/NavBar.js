@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import '../styles/NavBar.scss';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
@@ -15,10 +16,10 @@ export default function NavBar() {
             />
 
             <ul className='nav-links'>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Our Project</li>
-                <li>About Us</li>
+                <Link href='#home'><li>Home</li></Link>
+                <Link href='#services'><li>Services</li></Link>
+                <Link href='#portfolio'><li>Our Project</li></Link>
+                <Link href='#about'><li>About Us</li></Link> 
             </ul>
 
             <button className='nav-btn'>Contact Us</button>

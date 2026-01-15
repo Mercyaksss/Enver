@@ -4,7 +4,7 @@ import Grid from './Grid';
 
 function OurServices() {
   return (
-    <section className='our-services container'>
+    <section className='our-services container' id='services'>
         <h1>The Service We Provide For You</h1>
         <Grid/>
     </section>

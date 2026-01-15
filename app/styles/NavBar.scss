@@ -1,13 +1,17 @@
 nav {
-    position: relative;
-    max-width: 1200px;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    margin: 40px auto auto auto;
-    z-index: 10;
-
+    padding: 0 80px;
+    margin: auto;
+    z-index: 12;
+    background: rgba(18, 16, 41, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+   
     .nav-links {
         width: 532px;
         display: flex;
@@ -37,7 +41,7 @@ nav {
 
 @media (max-width: 1024px) {
     nav{
-        width: 90%;
+        padding: 0px 40px ;
 
         .nav-links{
             width: 330px;
@@ -45,15 +49,14 @@ nav {
     }
 }
 
-@media (max-width: 550px) {
+
+@media (max-width: 780px) {
   nav {
-    width: 90%;
 
     .menu-icon{
         display: block;
     }
     
-
     .nav-links{
         display: none;
     }
@@ -62,4 +65,10 @@ nav {
         display: none;
     }
   }
+}
+
+@media (max-width: 550px) {
+    nav{
+        padding: 0 20px;
+    }
 }

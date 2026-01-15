@@ -146,6 +146,9 @@ button{
 }
 
 @media (max-width: 1024px) {
+  body{
+    overflow-x: hidden;
+  }
 
   .container{
     width: 90%;
@@ -158,13 +161,23 @@ button{
   }
 }
 
+@media (max-width: 830px) {
+  .orb-5{
+    display: none;
+  }
+
+}
+
 @media (max-width: 550px) {
+  // body{
+  //   overflow-x: hidden;
+  // }
+
   .container{
     width: 90%;
 
     h1{
       font-size: 42px;
-      line-height: 50px;
     }
 
     p{
@@ -189,14 +202,9 @@ button{
   }
 
   .orb-5{
-    top: 3410px;
+    display: block;
+    top: 3000px;
     height: 700px;
   }
 
-  .zigzag{
-    top: 4100px;
-    left: 130px;
-    width: 61px;
-    height: 18px;
-  }
 }

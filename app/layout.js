@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
         <Image src={Rectangle3} width={2000} height={2774} alt='orb' className='orb-3 orb'/>
         <Image src={Rectangle4} width={600} height={900} alt='orb' className='orb-4 orb'/>
         <Image src={Rectangle5} width={1000} height={1500} alt='orb' className='orb-5 orb'/>
-        <Image src={zigzag} width={95} height={28} alt='zigzag' className='zigzag orb'/>
         <main>{children}</main>
         <Contact/>
         <Footer/>
