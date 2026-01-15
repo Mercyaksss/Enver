@@ -4,7 +4,7 @@ import heroimage from '../assets/heroimage.png';
 import arrow from '../assets/arrow.png'
 
 
-export default function HeroSection() {
+function HeroSection() {
     return(
         <section className='hero container'>
             <div className='hero-left'>
@@ -33,3 +33,5 @@ export default function HeroSection() {
         </section>
     );
 }
+
+export default HeroSection
