@@ -8,7 +8,6 @@ import { useState } from 'react';
 import SliderMenu from './SliderMenu';
 
 
-
 export default function NavBar() {
     const [ismenuopen, setIsmenuopen] = useState(false);
 

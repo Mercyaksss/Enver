@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/OurServices.scss';
 import Grid from './Grid';
 
+
 function OurServices() {
   return (
     <section className='our-services container' id='services'>

@@ -8,13 +8,11 @@ import Rectangle2 from './assets/Rectangle2.png';
 import Rectangle3 from './assets/Rectangle3.png';
 import Rectangle4 from './assets/Rectangle4.png';
 import Rectangle5 from './assets/Rectangle5.png';
-import zigzag from './assets/zigzag.png'
-
 
 
 export const metadata = {
-  title: 'Storefront – Modern E-Commerce',
-  description: 'Clean, trustworthy product shopping experience.',
+  title: 'Enver',
+  description: 'Build Your Awesome Platform',
 };
 
 export default function RootLayout({ children }) {

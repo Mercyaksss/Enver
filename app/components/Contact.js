@@ -4,6 +4,7 @@ import Image from 'next/image';
 import add from '../assets/add.png';
 import circle from '../assets/circle.png';
 
+
 function Contact() {
   return (
     <section className='contact'>

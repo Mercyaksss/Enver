@@ -3,6 +3,7 @@ import Image from 'next/image';
 import '../styles/Footer.scss';
 import logo from '../assets/logo.png';
 
+
 function Footer() {
   return (
     <section className='footer container'>

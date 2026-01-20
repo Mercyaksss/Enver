@@ -2,10 +2,9 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 import '../styles/SliderMenu.scss';
-// import {ismenuopen, setIsmenuopen} from '../components/NavBar'
+
 
 export default function SliderMenu({ onClose }) {
-  // Optional: close on Escape key
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === 'Escape') onClose();
@@ -18,7 +17,7 @@ export default function SliderMenu({ onClose }) {
     <div className="slide-menu-overlay" onClick={() => setIsmenuopen(!ismenuopen)}>
       <div 
         className="slide-menu-content"
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside menu
+        onClick={(e) => e.stopPropagation()} 
       >
         <button className="close-btn" onClick={onClose}>
           ×

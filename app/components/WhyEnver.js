@@ -3,6 +3,7 @@ import Image from 'next/image'
 import '../styles/WhyEnver.scss'
 import BG  from '../assets/BG.png'
 
+
 function WhyEnver() {
   return (
     <section className='why-enver container' id='about'>

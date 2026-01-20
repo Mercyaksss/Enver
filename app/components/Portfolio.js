@@ -1,28 +1,25 @@
 'use client';
-
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import image1 from '../assets/image1.png';
 import image2 from '../assets/image2.png';
 import image3 from '../assets/image3.png';
-import '../styles/Portfolio.scss';
-
 import arrowright from '../assets/arrowright.png';
 import arrowleft from '../assets/arrowleft.png';
+import '../styles/Portfolio.scss';
 
 
 function Portfolio() {
-  const scrollRef = useRef(null);               // ← add this
-
+  const scrollRef = useRef(null);               
   const scrollLeft = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -450, behavior: 'smooth' });  // adjust -300 as needed
+      scrollRef.current.scrollBy({ left: -450, behavior: 'smooth' }); 
     }
   };
 
   const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 450, behavior: 'smooth' });   // adjust 300 as needed
+      scrollRef.current.scrollBy({ left: 450, behavior: 'smooth' });   
     }
   };
 
@@ -30,7 +27,7 @@ function Portfolio() {
     <section className='portfolio container' id='portfolio'>
       <h1>Our Awesome Portfolio</h1>
 
-      <div className="portfolio-wrapper">           {/* ← new wrapper for positioning arrows */}
+      <div className="portfolio-wrapper">           
         <button 
           className="carousel-arrow left" 
           onClick={scrollLeft}
@@ -39,11 +36,10 @@ function Portfolio() {
           <Image src={arrowleft} width={24} height={24} alt='arrow-left'/>
         </button>
 
-        <div className='portfolio-flex' ref={scrollRef}>    {/* ← add ref here */}
+        <div className='portfolio-flex' ref={scrollRef}>    
           <Image src={image1} width={384} height={301} alt='portfolio-image' className='top'    />
           <Image src={image2} width={384} height={301} alt='portfolio-image' className='center' />
           <Image src={image3} width={384} height={301} alt='portfolio-image' className='bottom' />
-          {/* add more projects later if you want real sliding */}
         </div>
 
         <button 

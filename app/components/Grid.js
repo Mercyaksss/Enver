@@ -17,7 +17,6 @@ function Grid() {
         {name: 'Motion Graphik', text: 'Create a platform with the best and coolest quality from us.', icon: icon4},
         {name: 'Photography', text: 'We provide Photography services, and of course with the best quality', icon: icon5},
         {name: 'Videography', text: 'Create a platform with the best and coolest quality from us.', icon: icon6},
-
     ];
 
   return (
@@ -25,16 +24,16 @@ function Grid() {
         {griditems.map((item, index) => (
             <div key={index} className='service-card'> 
 
-            <Image
-                src={item.icon}
-                width={69}
-                height={69}
-                alt='icon'
-            />
+                <Image
+                    src={item.icon}
+                    width={69}
+                    height={69}
+                    alt='icon'
+                />
 
-            <h2>{item.name}</h2>
-            <p>{item.text}</p>
-            
+                <h2>{item.name}</h2>
+                <p>{item.text}</p>
+                
             </div>
         ))}
     </div>

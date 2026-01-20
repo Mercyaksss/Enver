@@ -37,7 +37,7 @@
     }
 
     .carousel-arrow {
-        display: none;                      // hidden by default
+        display: none;                   
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -87,28 +87,27 @@
 @media (max-width: 800px) {
   .portfolio {
     &-flex {
-      overflow-x: auto;               // change to auto (scrollbar appears only when needed)
+      overflow-x: auto;               
       scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch; // smooth on iOS
-      scrollbar-width: none;          // hide scrollbar Firefox
-      &::-webkit-scrollbar {          // hide scrollbar Chrome/Safari
+      -webkit-overflow-scrolling: touch; 
+      scrollbar-width: none;          
+      &::-webkit-scrollbar {         
         display: none;
       }
 
       display: flex;
       gap: 24px;
-      padding: 0 16px;                // little breathing room on sides
+      padding: 0 16px;                
 
       img {
-        min-width: 340px;             // or 320–375px depending on your images
+        min-width: 340px;             
         height: auto;
         flex-shrink: 0;
       }
 
-      // Optional: reduce stagger or center them vertically in this mode
       .top,
       .bottom {
-        align-self: center;           // ← you already have this, good
+        align-self: center;           
       }
     }
 
@@ -147,7 +146,7 @@
 
     .portfolio-flex {
         img {
-        min-width: 85vw;              // almost full width feel
+        min-width: 85vw;              
         }
     }
   }
