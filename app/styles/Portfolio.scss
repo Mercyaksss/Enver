@@ -1,9 +1,21 @@
 .portfolio{
     margin-bottom: 256px;
 
+    .portfolio-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
     &-flex{
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;   
+        gap: 24px;      
+        min-height: 500px;
+
+        img{
+            min-width: 200px;
+        }
     }
 
     h1{
@@ -23,6 +35,38 @@
     .bottom{
         align-self: flex-end;
     }
+
+    .carousel-arrow {
+        display: none;                      // hidden by default
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 2;
+        transition: background 0.2s;
+
+        &:hover {
+            background: var(--primary-dark);
+        }
+
+        &.left  { left: 8px; }
+        &.right { right: 8px; }
+
+        img{
+            position: relative;
+            top: 32%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -30,11 +74,50 @@
 
         &-flex {
             gap: 24px;
-            overflow-x: scroll;
+            min-height: 350px;
+
+            img{
+                max-height: 200px;
+            }
         }
     }
 }
 
+
+@media (max-width: 800px) {
+  .portfolio {
+    &-flex {
+      overflow-x: auto;               // change to auto (scrollbar appears only when needed)
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch; // smooth on iOS
+      scrollbar-width: none;          // hide scrollbar Firefox
+      &::-webkit-scrollbar {          // hide scrollbar Chrome/Safari
+        display: none;
+      }
+
+      display: flex;
+      gap: 24px;
+      padding: 0 16px;                // little breathing room on sides
+
+      img {
+        min-width: 340px;             // or 320–375px depending on your images
+        height: auto;
+        flex-shrink: 0;
+      }
+
+      // Optional: reduce stagger or center them vertically in this mode
+      .top,
+      .bottom {
+        align-self: center;           // ← you already have this, good
+      }
+    }
+
+    // Show arrows here
+    .carousel-arrow {
+      display: block;
+    }
+  }
+}
 
 @media (max-width: 550px){
   .portfolio{
@@ -52,7 +135,19 @@
         
         img {
             width: 100%; 
-            height: auto; 
+            min-height: 300px; 
+        }
+    }
+
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .portfolio-flex {
+        img {
+        min-width: 85vw;              // almost full width feel
         }
     }
   }

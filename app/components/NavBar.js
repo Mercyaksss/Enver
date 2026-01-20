@@ -1,11 +1,17 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import '../styles/NavBar.scss';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
+import { useState } from 'react';
+import SliderMenu from './SliderMenu';
+
 
 
 export default function NavBar() {
+    const [ismenuopen, setIsmenuopen] = useState(false);
+
     return(
         <nav>
             <Image
@@ -29,8 +35,11 @@ export default function NavBar() {
                 width={24}
                 height={24}
                 alt='menu'
-                className='menu-icon'
+                className={`menu-icon ${ismenuopen ? 'hide' : ''}`}   
+                onClick={() => (setIsmenuopen (!ismenuopen))}
             />
+
+            {ismenuopen && <SliderMenu onClose={() => setIsmenuopen(false)} />}
         </nav>
     );
 }
